@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>相册</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>相册库</h2>
+            <button id="import-btn" class="action-button">
+                <i class="fas fa-plus"></i>
+                导入照片
+            </button>
+            <button id="settings-btn" class="action-button">
+                <i class="fas fa-cog"></i>
+                设置存储位置
+            </button>
+            <div class="path-container">
+                <div id="current-path" class="current-path"></div>
+                <button id="open-path-btn" class="action-button">
+                    <i class="fas fa-folder-open"></i>
+                    打开文件夹
+                </button>
+            </div>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="搜索照片或视频...">
+            </div>
+            
+            <!-- 添加年月导航树 -->
+            <div class="date-tree">
+                <div class="tree-header">
+                    <i class="fas fa-calendar"></i>
+                    按日期浏览
+                </div>
+                <div class="tree-content">
+                    <!-- 这里将通过 JavaScript 动态生成年月树结构 -->
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="date-view">
+                <!-- 日期分组将通过JavaScript动态生成 -->
+            </div>
+        </div>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html> 
